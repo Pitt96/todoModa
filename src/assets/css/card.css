@@ -1,0 +1,143 @@
+/*ESTILOS PARA LA SECCION MULTIMEDIA*/
+.seccionMultimedia article {
+  color: white; }
+  .seccionMultimedia article h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px; }
+  .seccionMultimedia article p {
+    text-align: center; }
+
+.videoMultimedia {
+  width: 100%;
+  height: 315px;
+  overflow: hidden; }
+  .videoMultimedia iframe {
+    width: 100%; }
+
+/*ESTILOS PARA LA SECCION TENDENCIA*/
+.seccionTendencia {
+  padding: 20px 0; }
+  .seccionTendencia article {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center; }
+    .seccionTendencia article h2 {
+      text-align: center;
+      padding: 10px 0;
+      font-size: 25px; }
+    .seccionTendencia article p {
+      text-align: center;
+      padding: 10px 0; }
+
+.cajaImagenTendencia {
+  width: 100%;
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  align-items: center; }
+  .cajaImagenTendencia img {
+    width: 100%; }
+
+.botonConocer {
+  padding: 10px 0;
+  margin-top: 10px;
+  transition: 0.5s; }
+  .botonConocer:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); }
+  .botonConocer a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(250, 1, 1, 0.671);
+    padding: 10px;
+    border-radius: 5px; }
+.seccionCards {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .seccionCards .card {
+      width: 100%;
+      height: 510px;
+      background-color: rgba(102, 100, 100, 0.418);
+      border-radius: 4px;
+      margin-bottom: 20px;
+      box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329);
+      transition: all 0.7s; }
+      .seccionCards .card:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 5px 3px 6px rgba(255, 255, 255, 0.329); }
+      .seccionCards .card .imagenCard {
+        width: 100%;
+        height: 310px;
+        overflow: hidden; }
+        .seccionCards .card .imagenCard img {
+          width: 100%;
+          border-radius: 4px 4px 4px 4px; }
+      .seccionCards .card .contenidoCard {
+        color: white;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+        .seccionCards .card .contenidoCard h2 {
+          font-size: 25px; }
+        .seccionCards .card .contenidoCard p {
+          padding-left: 10px; }
+        .seccionCards .card .contenidoCard a {
+          text-decoration: none;
+          color: white;
+          padding: 5px;
+          border-radius: 5px;
+          background-color: rgba(250, 1, 1, 0.671);
+          transition: all 0.5s; }
+          .seccionCards .card .contenidoCard a:hover {
+            transform: translate(-3px, -2px);
+            box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); }
+
+            /*ESTILOS PARA INDEX TABLET*/
+@media all and (min-width: 481px) {
+  .seccionMultimedia {
+    display: grid;
+    grid-template-columns: 40% 60%; }
+    .seccionMultimedia .videoMultimedia {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .seccionMultimedia article {
+      padding: 0 5px; }
+  .seccionTendencia {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .seccionTendencia article {
+      padding: 0 10px; }
+  .card {
+    width: 280px; }
+  .seccionCards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 20px; } }
+
+/*ESTILOS PARA INDEX DESKTOP*/
+@media all and (min-width: 1025px) {
+  .seccionMultimedia {
+    padding-top: 80px;
+    grid-template-columns: 50% 50%; }
+    .seccionMultimedia article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px; }
+  .seccionTendencia article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px; }
+  .seccionCards {
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between; } }
