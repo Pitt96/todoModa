@@ -1,0 +1,21 @@
+/*ESTIOS PARA LA SECCION HOMBRE Y MUJER MOBILE*/
+.tituloRopa {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Playfal Display", serif; }
+  
+  /*ESTILOS PARA LA SECCION HOMBRE Y MUJER TABLET*/
+  @media all and (min-width: 481px) {
+    .seccionCard {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around; } }
+  
+  /*ESTILOS PARA LA SECCION HOMBRE Y MUJER DESKTOP*/
+  @media all and (min-width: 1025px) {
+    .tituloRopa {
+      color: white; }
+    .seccionCard {
+      grid-template-columns: repeat(4, auto); } }

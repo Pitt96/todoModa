@@ -1,6 +1,5 @@
 import { Card } from "../components/Card"
 // import { Footer } from "../components/Footer"
-import { Header } from "../components/Header"
 import ModeloCard from "../assets/images/modeloCard1.jpg"
 import ImagenCard2 from "../assets/images/imagenCard2.jpg"
 import ImagenCard3 from "../assets/images/imagenCard3.jpg"
@@ -14,7 +13,6 @@ export const Inicio = () => {
     console.log(images)
     return (
         <>
-                <Header />
                 <main>
                     <section className="seccionMultimedia">
                         <article>
@@ -48,7 +46,7 @@ export const Inicio = () => {
                         }
                     </section>
                 </main>
-                {/* <Footer /> */}
-        </>
+        </>    
+        
     )
 }

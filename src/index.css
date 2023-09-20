@@ -4,3 +4,13 @@
   box-sizing: border-box;
   background-color: black;
 }
+
+main {
+  width: 85%; 
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }

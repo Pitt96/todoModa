@@ -1,0 +1,62 @@
+/*ESTILOS PARA CONOCENOS MOBILE*/
+/*ESTILOS PARA BANNER CONOCENOS*/
+.bannerConocenos {
+    width: 100%; }
+    .bannerConocenos img {
+      width: 100%; }
+  
+  /*ESTILOS PARA LA DESCRIPCION CONOCENOS*/
+  .descripcionConocenos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .descripcionConocenos h2 {
+      padding: 100px 0;
+      font-size: 30px;
+      font-family: "Playfal Display", serif; }
+    .descripcionConocenos p {
+      text-align: center;
+      padding: 0 10px; }
+  
+  /*ESTILOS PARA LA SECCION IMAGENES CONOCENOS*/
+  .imagenesReferencialesConocenos article {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 285px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329);
+    transition: all 0.5s; }
+    .imagenesReferencialesConocenos article:hover {
+      transform: translate(-5px, -5px);
+      box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329); }
+    .imagenesReferencialesConocenos article img {
+      width: 100%; }
+  
+  /*ESTILOS PARA CONOCENOS TABLET*/
+  @media all and (min-width: 481px) {
+    .descripcionConocenos h2 {
+      font-size: 40px;
+      font-family: "Playfal Display", serif; }
+    .imagenesReferencialesConocenos {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      gap: 20px; }
+      .imagenesReferencialesConocenos article {
+        width: 300px;
+        height: 342px; }
+        .imagenesReferencialesConocenos article:nth-child(3) {
+          margin-bottom: 30px; } }
+  
+  /*ESTILOS PARA CONOCENOS DESKTOP*/
+  @media all and (min-width: 1025px) {
+    .imagenesReferencialesConocenos {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      justify-content: space-between; }
+      .imagenesReferencialesConocenos Article {
+        width: 200px;
+        height: 240px; } }
+  
